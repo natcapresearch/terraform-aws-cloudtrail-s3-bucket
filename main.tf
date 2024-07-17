@@ -20,6 +20,7 @@ module "s3_bucket" {
   abort_incomplete_multipart_upload_days = var.abort_incomplete_multipart_upload_days
   sse_algorithm                          = var.sse_algorithm
   kms_master_key_arn                     = var.kms_master_key_arn
+  bucket_key_enabled                     = var.bucket_key_enabled
   block_public_acls                      = var.block_public_acls
   block_public_policy                    = var.block_public_policy
   ignore_public_acls                     = var.ignore_public_acls
@@ -71,6 +72,7 @@ module "s3_access_log_bucket" {
   abort_incomplete_multipart_upload_days = var.abort_incomplete_multipart_upload_days
   sse_algorithm                          = var.sse_algorithm
   kms_master_key_arn                     = var.kms_master_key_arn
+  bucket_key_enabled                     = var.bucket_key_enabled
   block_public_acls                      = var.block_public_acls
   block_public_policy                    = var.block_public_policy
   ignore_public_acls                     = var.ignore_public_acls
